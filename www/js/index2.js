@@ -18,15 +18,6 @@
  */
 
 function onPushwooshInitialized(pushNotification) {
-    // set userId
-    // pushNotification.setTags({Name:"JiebMobile"},
-    // function(status) {
-    //     console.warn('setTags success');
-    // },
-    // function(status) {
-    //     console.warn('setTags failed');
-    // }
-    // );
 
     //if you need push token at a later time you can always get it from Pushwoosh plugin
     pushNotification.getPushToken(
@@ -43,17 +34,17 @@ function onPushwooshInitialized(pushNotification) {
     );
 
     //settings tags
-    pushNotification.setTags({
-            username: "JiebMobile"
-            // intTagName: 10
-        },
-        function(status) {
-            console.info('setTags success: ' + JSON.stringify(status));
-        },
-        function(status) {
-            console.warn('setTags failed');
-        }
-    );
+    // pushNotification.setTags({
+    //         username: "JiebMobile"
+    //         // intTagName: 10
+    //     },
+    //     function(status) {
+    //         console.info('setTags success: ' + JSON.stringify(status));
+    //     },
+    //     function(status) {
+    //         console.warn('setTags failed');
+    //     }
+    // );
 
     pushNotification.getTags(
         function(status) {
@@ -95,7 +86,7 @@ function initPushwoosh() {
     });
 
     // set userId
-    pushNotification.setTags({Name:"JiebMobile"},
+    pushNotification.setTags({username:"JiebMobile"},
     function(status) {
         console.warn('setTags success');
     },

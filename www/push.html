@@ -83,24 +83,24 @@
     }
 
 
-    function setTags(){
-      $.ajax({
-        type: "POST",
-        url: "https://cp.pushwoosh.com/json/1.3/setTags",
-        data:
-         "request": JSON.stringify({
-            "application":"6612A-7C4FC",
-            "hwid": "device hardware id",
-            "tags": {
-                 "username": "JiebMobile"
-            }
-         })
-      ,
-        dataType: "json"
-      }).done(function(data) {
-        console.log(data);
-      });
-    }
+    // function setTags(){
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "https://cp.pushwoosh.com/json/1.3/setTags",
+    //     data:
+    //      "request": JSON.stringify({
+    //         "application":"6612A-7C4FC",
+    //         "hwid": "device hardware id",
+    //         "tags": {
+    //              "username": "JiebMobile"
+    //         }
+    //      })
+    //   ,
+    //     dataType: "json"
+    //   }).done(function(data) {
+    //     console.log(data);
+    //   });
+    // }
     // Register user
     // function RegisterDevice() {
     //   // var application = $('#application').val();
