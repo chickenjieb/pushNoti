@@ -43,17 +43,17 @@ function onPushwooshInitialized(pushNotification) {
     );
 
     //settings tags
-    // pushNotification.setTags({
-    //         tagName: "tagValue",
-    //         intTagName: 10
-    //     },
-    //     function(status) {
-    //         console.info('setTags success: ' + JSON.stringify(status));
-    //     },
-    //     function(status) {
-    //         console.warn('setTags failed');
-    //     }
-    // );
+    pushNotification.setTags({
+            Name: "JiebMobile"
+            // intTagName: 10
+        },
+        function(status) {
+            console.info('setTags success: ' + JSON.stringify(status));
+        },
+        function(status) {
+            console.warn('setTags failed');
+        }
+    );
 
     pushNotification.getTags(
         function(status) {
