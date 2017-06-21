@@ -44,7 +44,7 @@ function onPushwooshInitialized(pushNotification) {
 
     //settings tags
     pushNotification.setTags({
-            Name: "JiebMobile"
+            username: "JiebMobile"
             // intTagName: 10
         },
         function(status) {
