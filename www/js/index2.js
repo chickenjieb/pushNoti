@@ -18,6 +18,15 @@
  */
 
 function onPushwooshInitialized(pushNotification) {
+    // set userId
+    // pushNotification.setTags({Name:"JiebMobile"},
+    // function(status) {
+    //     console.warn('setTags success');
+    // },
+    // function(status) {
+    //     console.warn('setTags failed');
+    // }
+    // );
 
     //if you need push token at a later time you can always get it from Pushwoosh plugin
     pushNotification.getPushToken(
@@ -86,7 +95,7 @@ function initPushwoosh() {
     });
 
     // set userId
-    pushNotification.setTags({username:"JiebMobile"},
+    pushNotification.setTags({Name:"JiebNox"},
     function(status) {
         console.warn('setTags success');
     },
