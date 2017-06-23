@@ -35,7 +35,7 @@ function onPushwooshInitialized(pushNotification) {
 
     //settings tags
     pushNotification.setTags({
-                Name: "tagValue"
+                username: "omg"
             },
             function(status) {
                 console.info('setTags success: ' + JSON.stringify(status));
